@@ -26,7 +26,17 @@ SELECT * FROM produtos WHERE categoria = 'eletrônicos' AND estoque > 10;
 --EX03:
 SELECT * FROM produtos WHERE categoria = 'periféricos' OR valor < 200;
 -- EX04:
-SELECT nome_produto, valor FROM produtos ORDER BY DESC;
+SELECT nome_produto, valor FROM produtos ORDER BY valor DESC;
 -- EX05:
 SELECT * FROM produtos ORDER BY estoque ASC LIMIT 2;
+--EX06:
+UPDATE produtos SET estoque = 10 WHERE categoria = 'mobília';
+--EX07:
+UPDATE produtos SET valor = valor + 50 WHERE categoria = 'Periféricos';
+--EX08:
+SELECT * FROM produtos WHERE nome_produto <> 'Mouse Gamer';
+--EX09:
+DELETE FROM produtos WHERE estoque < 5;
+--EX10:
+SELECT nome_produto FROM produtos ORDER BY nome_produto ASC LIMIT 3;
 
