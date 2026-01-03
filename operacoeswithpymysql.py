@@ -9,9 +9,9 @@ with con.cursor as c:
     sql = "SELECT nomeLivro ,ISBN13 FROM tbl_livro WHERE idLivro=104"
     c.execute(sql)
     resultado = c.fetchone()
-    print(res)
+    print(resultado)
     print()
-    print("Livro retornado: ",res['Nomelivro'])
+    print("Livro retornado: ",resultado['Nomelivro'])
 
     # Outra consulta: dados da tabela de editoras
     slq = "SELECT NomeEditora FROM tbl_editoras"
