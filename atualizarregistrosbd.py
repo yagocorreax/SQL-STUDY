@@ -59,6 +59,7 @@ if __name__ == '__main__':
     novo_valor = input("\nDigite o novo valor do produto: ")
 
     
-    declaracao_update = "UPDATE produtos SET valor = " + novo_valor + " WHERE id_produto = " + id_prod
+    declaracao_update = "UPDATE produtos SET valor = " + '%s' + " WHERE id_produto = " + '%s'
+    (novo_valor, id_prod)
     
     atualiza(declaracao_update)
