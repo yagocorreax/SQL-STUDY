@@ -32,7 +32,7 @@ def consulta_autor():
         for linha in res:
             print(f"Autor: {linha['NomeAutor']} {linha['SobrenomeAutor']}")
             
-    def altera_livro(Livro_atual, Novo_livro):
+def altera_livro(Livro_atual, Novo_livro):
     
         try:
             conecta()
